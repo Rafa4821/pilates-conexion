@@ -1,0 +1,277 @@
+/* css/style.css */
+
+/*================================================================
+  VARIABLES DE COLOR (paleta proporcionada en /mnt/data/...png):
+  #950753, #E35342, #FFB11E, #FF4966, #9E2997
+================================================================*/
+:root {
+  --color-primary:   #950753; /* Color base del navbar, pie de página */
+  --color-secondary: #E35342; /* Color secundario para botones y headings */
+  --color-accent:    #FFB11E; /* Color de acento para llamadas a la acción */
+  --color-highlight: #FF4966; /* Color para hover/efectos */
+  --color-alt:       #9E2997; /* Color alternativo / detalles */
+  --text-light:      #ffffff; /* Texto claro */
+  --text-dark:       #333333; /* Texto oscuro */
+}
+
+/*==========================
+  RESET Y AJUSTES BÁSICOS
+==========================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-dark);
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/*==========================
+  NAVBAR COMÚN A TODAS LAS PÁGINAS
+==========================*/
+.navbar {
+  background-color: var(--color-primary);
+}
+
+.navbar .navbar-brand {
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--text-light) !important;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--color-accent) !important;
+}
+
+/*==========================
+  FOOTER COMÚN
+==========================*/
+footer {
+  background-color: var(--color-primary);
+  color: var(--text-light);
+  padding: 1rem 0;
+}
+
+footer a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color-accent);
+}
+
+/*==========================
+  BOTONES PERSONALIZADOS
+==========================*/
+.btn-primary-custom {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--text-light);
+}
+
+.btn-primary-custom:hover,
+.btn-primary-custom:focus {
+  background-color: var(--color-highlight);
+  border-color: var(--color-highlight);
+  color: var(--text-light);
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--text-dark);
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background-color: var(--color-highlight);
+  border-color: var(--color-highlight);
+  color: var(--text-light);
+}
+
+/*==========================
+  ESTILOS GENERALES DE SECCIONES
+==========================*/
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+/* Hero (Home) */
+.hero {
+  background: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTI3fDB8MHxzZWFyY2h8Mnx8cGlsYXRlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&q=80&w=1920') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: var(--text-light);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.hero .hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero .hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero .hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/*==========================
+  ESTILOS PARA CADA SECCIÓN
+==========================*/
+
+/* HOME */
+.home-info {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+}
+
+/* SERVICIOS */
+.servicios-container {
+  padding: 4rem 1rem;
+  background-color: #f0f0f0;
+}
+
+.servicio-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+}
+
+.servicio-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.servicio-card .card-body h5 {
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.servicio-card .card-body p {
+  font-size: 0.94rem;
+}
+
+/* Ticket de precio */
+.servicio-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+/* NOSOTROS */
+.nosotros-container {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+}
+
+.instructor-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.instructor-card:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.instructor-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.instructor-card .card-body h5 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-secondary);
+}
+
+/* CONTACTO */
+.contacto-container {
+  padding: 4rem 1rem;
+  background-color: #f0f0f0;
+}
+
+#mapa {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* FORMULARIO */
+.form-label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+/* PIE DE PÁGINA */
+.footer-social i {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* PERSONALIZACIONES ADICIONALES */
+/* Ajustes de tipografía */
+h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Enlaces en estado hover */
+a:hover {
+  text-decoration: none;
+}
+
+/* RESPONSIVE: pequeños ajustes */
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .hero .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}

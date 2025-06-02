@@ -1,0 +1,189 @@
+<!-- servicios.html -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pilates Conexión | Servicios</title>
+  <meta name="description" content="Descubre nuestros servicios de Pilates: clases grupales, personalizadas, Reformer, rehabilitación y más.">
+  <meta name="keywords" content="Pilates, Servicios, Clases, Grupo, Reformer, Rehabilitación">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Pilates Conexión</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Título de sección -->
+  <section class="servicios-container">
+    <div class="container">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <p class="section-subtitle">Elige la opción que mejor se adapte a tus necesidades. Haz clic para más información.</p>
+
+      <div class="row gy-4">
+        <!-- Servicio 1 (CON precio) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card servicio-card">
+            <img src="https://images.unsplash.com/photo-1583454110554-021b9659b52b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTI3fDB8MHxzZWFyY2h8NHx8PGluc3RydWN0b3J8ZW58MHx8MHx8&ixlib=rb-1.2.1&q=80&w=800" 
+                 class="card-img-top" alt="Clases Grupales de Pilates">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Clases Grupales de Pilates</h5>
+              <p class="card-text">Sesiones grupales de hasta 8 personas. Ideal para tonificar y mejorar la postura en un ambiente motivador.</p>
+              <div class="mb-2 servicio-price">$8.000 CLP</div>
+              <button type="button" class="btn btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">
+                Más Información
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 2 (CON precio) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card servicio-card">
+            <img src="https://images.unsplash.com/photo-1598300050587-ebe789e9e14e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTI3fDB8MHxzZWFyY2h8NXx8cGlsYXRlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&q=80&w=800" 
+                 class="card-img-top" alt="Pilates Personalizado">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Pilates Personalizado</h5>
+              <p class="card-text">Clases individuales para objetivos específicos: rehabilitación, tonificación o acondicionamiento general.</p>
+              <div class="mb-2 servicio-price">$25.000 CLP</div>
+              <button type="button" class="btn btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">
+                Más Información
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 3 (CON precio) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card servicio-card">
+            <img src="https://images.unsplash.com/photo-1581905764498-bc7d5a44fae4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTI3fDB8MHxzZWFyY2h8Nn58cmVmb3JtZXIlMjBwZWxhaXRpc2lmdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&q=80&w=800" 
+                 class="card-img-top" alt="Pilates en Reformer">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Pilates en Reformer</h5>
+              <p class="card-text">Uso de máquina Reformer para un entrenamiento profundo y adaptable a todos los niveles.</p>
+              <div class="mb-2 servicio-price">$15.000 CLP</div>
+              <button type="button" class="btn btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">
+                Más Información
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 4 (SIN precio) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card servicio-card">
+            <img src="https://images.unsplash.com/photo-1603398938378-5fe6c3967de4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTI3fDB8MHxzZWFyY2h8Mnx8Y2xhenMlMjBtYXQlMjBvbmxpbmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&q=80&w=800" 
+                 class="card-img-top" alt="Clases Mat Online">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Clases Mat Online</h5>
+              <p class="card-text">Sesiones en línea vía Zoom, desde la comodidad de tu hogar. Nivel básico, intermedio y avanzado.</p>
+              <!-- No se muestra precio -->
+              <button type="button" class="btn btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">
+                Más Información
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 5 (SIN precio) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card servicio-card">
+            <img src="https://images.unsplash.com/photo-1600146532978-b2dae4bfb9b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTI3fDB8MHxzZWFyY2h8Mnx8cmViYWxpdGFjaWNvfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&q=80&w=800" 
+                 class="card-img-top" alt="Pilates para Rehabilitación">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Pilates para Rehabilitación</h5>
+              <p class="card-text">Clases especializadas para recuperación de lesiones y fisioterapia complementaria con Pilates.</p>
+              <!-- No se muestra precio -->
+              <button type="button" class="btn btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">
+                Más Información
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 6 (SIN precio) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card servicio-card">
+            <img src="https://images.unsplash.com/photo-1580281657526-8ffcb43e4da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTI3fDB8MHxzZWFyY2h8OHx8cGlsYXRlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&q=80&w=800" 
+                 class="card-img-top" alt="Clases Privadas en Pareja">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Clases Privadas en Pareja</h5>
+              <p class="card-text">Comparte la experiencia con un amigo o pareja, prácticas personalizadas para ambos niveles.</p>
+              <!-- No se muestra precio -->
+              <button type="button" class="btn btn-primary-custom mt-auto" data-bs-toggle="modal" data-bs-target="#contactModal">
+                Más Información
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal de Contacto/WhatsApp -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contáctanos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Elige la vía de contacto que prefieras:</p>
+          <div class="d-flex justify-content-center gap-3">
+            <!-- Icono WhatsApp -->
+            <a href="https://wa.me/56912345678" target="_blank" class="btn btn-accent">
+              <i class="bi bi-whatsapp me-2"></i>WhatsApp
+            </a>
+            <!-- Icono Formulario de Contacto -->
+            <a href="contacto.html#contact" class="btn btn-primary-custom">
+              <i class="bi bi-envelope-fill me-2"></i>Formulario
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-5">
+    <div class="container text-center">
+      <p>© 2025 Pilates Conexión. Todos los derechos reservados.</p>
+      <div class="footer-social mb-2">
+        <a href="https://facebook.com"><i class="bi bi-facebook me-2"></i></a>
+        <a href="https://instagram.com"><i class="bi bi-instagram me-2"></i></a>
+        <a href="https://youtube.com"><i class="bi bi-youtube me-2"></i></a>
+        <a href="https://twitter.com"><i class="bi bi-twitter"></i></a>
+      </div>
+      <p><a href="politicas.html">Políticas y Aviso Legal</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS + Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script propio -->
+  <script src="js/script.js"></script>
+</body>
+</html>
