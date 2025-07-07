@@ -1,0 +1,15 @@
+.card-image img {
+  object-fit: cover !important;
+  width: 100%;
+  height: 100%;
+}
+
+.interactive-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interactive-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--mantine-shadow-lg);
+}
+
